@@ -1,4 +1,61 @@
 {
+    // SOURCE: https://discourse.getdbt.com/t/setting-up-vscode-to-use-with-the-dbt-cli/3291/3
+    // (Note: we used to use this but changed to the new source above) SOURCE: https://dbt-msft.github.io/dbt-msft-docs/docs/guides/vscode_setup/#find-related
+    // this is so you can easily jump to your compiled SQL files
+    "findrelated.workspaceRulesets": [
+        {
+            "name": "sql",
+            "rules": [
+                {
+                    "pattern": "^((?!.*target).*/)?(analysis|data|macros|models|tests)/(.+/)?([^/]+)\\.sql$",
+                    "locators": [
+                        "**/$4.yml",
+                        "**/compiled/**/$2/$3$4.sql",
+                        "**/run/**/$2/$3$4.sql",
+                    ]
+                },
+
+                {
+                    "pattern": "^(.*/)?compiled/([^/]+)/(.+/)?([^/]+)\\.sql$",
+                    "locators": [
+                        "$3$4.sql",
+                        "$2/$3$4.sql",
+                        "**/run/$2/$3$4.sql",
+                        "**/$4.yml",
+                    ]
+                },
+                                    {
+                    "pattern": "^(.*/)?run/([^/]+)/(.+/)?([^/]+)\\.sql$",
+                    "locators": [
+                        "$3$4.sql",
+                        "$2/$3$4.sql",
+                        "**/compiled/$2/$3$4.sql",
+                        "**/$4.yml",
+                    ]
+                },
+            ]
+        },
+
+        {
+            "name": "yml",
+            "rules": [
+                {
+                    "pattern": "^(.*/)?(analysis|data|macros|models|tests)/(.+/)?([^/]+)?\\.yml$",
+                    "locators": [
+                        "**/$3$4.sql"
+                    ]
+                }
+            ]
+        },
+    ],
+    "findrelated.applyRulesets": [
+        "sql",
+        "yml",
+    ],
+    "findrelated.autoOpen": false,
+    "findrelated.autoPreview": false,
+    "findrelated.openPreview": false,
+    
     // SOURCE: https://dbt-msft.github.io/dbt-msft-docs/docs/guides/vscode_setup/#extra-settings
     // easier to see if there are unsaved changed
     "workbench.editor.highlightModifiedTabs": true,
@@ -46,6 +103,12 @@
         },
     },
     "terminal.integrated.defaultProfile.osx": "Custom MacOS",
+
+
+
+    // DBT POWER USER
+    "dbt.profilesDirOverride": ".",
+    "dbt.versionCheck": "neither",
 
 
     "scm.defaultViewMode": "tree",
