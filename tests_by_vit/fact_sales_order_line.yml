@@ -9,6 +9,12 @@ models:
               config:
                 tags: lesson-0101
 
+      - name: product_id
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0103b
+
       - name: quantity
         tests:
           - dbt_expectations.expect_column_to_exist:
