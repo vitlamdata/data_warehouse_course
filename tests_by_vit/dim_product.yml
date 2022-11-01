@@ -32,6 +32,9 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0104a
+          - not_null
+              config:
+                tags: lesson-0109a
 
       - name: is_chiller_stock
         tests:
