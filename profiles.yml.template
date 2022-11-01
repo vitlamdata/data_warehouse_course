@@ -1,0 +1,14 @@
+wide_world_importers_dbt:
+  outputs:
+    dev:
+      project: duckdata-example
+      keyfile: C:\Users\Admin\Projects\data_warehouse_course\conf\dbt-bigquery-service-account.json
+      location: asia-southeast1
+      dataset: wide_world_importers_dwh
+      type: bigquery
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: service-account
+      priority: interactive
+      threads: 4
+  target: dev
