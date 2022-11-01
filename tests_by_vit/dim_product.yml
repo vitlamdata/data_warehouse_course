@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_product
+    columns:
+      - name: product_id
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0103a
+
+      - name: product_name
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0103a
+
+      - name: brand_name
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0103a
