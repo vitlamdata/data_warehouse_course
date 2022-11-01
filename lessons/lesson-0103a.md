@@ -4,6 +4,6 @@ Yêu cầu của `lesson-0103a`:
 
 | Tên gốc         | Tên mới      |
 |-----------------|--------------|
-| stock_item_id   | product_id   |
+| stock_item_id   | product_key  |
 | stock_item_name | product_name |
 | brand           | brand_name   |

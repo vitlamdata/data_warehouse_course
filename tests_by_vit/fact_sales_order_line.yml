@@ -3,7 +3,7 @@ version: 2
 models:
   - name: fact_sales_order_line
     columns:
-      - name: sales_order_line_id
+      - name: sales_order_line_key
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
@@ -13,7 +13,7 @@ models:
               config:
                 tags: lesson-0104b
 
-      - name: product_id
+      - name: product_key
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:

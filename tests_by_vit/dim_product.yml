@@ -3,7 +3,7 @@ version: 2
 models:
   - name: dim_product
     columns:
-      - name: product_id
+      - name: product_key
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
