@@ -109,6 +109,7 @@
     // DBT POWER USER
     "dbt.profilesDirOverride": ".",
     "dbt.versionCheck": "neither",
+    "dbt.queryLimit": 500,
 
 
     "scm.defaultViewMode": "tree",
