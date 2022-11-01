@@ -20,3 +20,9 @@ models:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0101
+
+      - name: gross_amount
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0102
