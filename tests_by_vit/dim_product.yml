@@ -32,7 +32,7 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0104a
-          - not_null
+          - not_null:
               config:
                 tags: lesson-0109a
 
@@ -45,6 +45,9 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0108b
+          - not_null:
+              config:
+                tags: lesson-0109b
 
       - name: supplier_key
         tests:
@@ -65,3 +68,6 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0107b
+          - not_null:
+              config:
+                tags: lesson-0109b

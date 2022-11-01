@@ -1,0 +1,1 @@
+Yêu cầu của `lesson-0109b`: Xử lý null ở những chỗ dùng `LEFT JOIN` của tất cả bảng dimension.

@@ -32,6 +32,9 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0108b
+          - not_null:
+              config:
+                tags: lesson-0109b
 
       - name: customer_category_key
         tests:
@@ -52,6 +55,9 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0107c
+          - not_null:
+              config:
+                tags: lesson-0109b
               
       - name: buying_group_key
         tests:
@@ -72,3 +78,6 @@ models:
               column_type: STRING
               config:
                 tags: lesson-0107c
+          - not_null:
+              config:
+                tags: lesson-0109b
