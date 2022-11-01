@@ -112,4 +112,5 @@
 
 
     "scm.defaultViewMode": "tree",
+    "extensions.ignoreRecommendations": true,
 }
