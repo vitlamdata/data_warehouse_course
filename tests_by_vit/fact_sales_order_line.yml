@@ -8,27 +8,47 @@ models:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0101
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0104b
 
       - name: product_id
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0103b
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0104b
 
       - name: quantity
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0101
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0104b
 
       - name: unit_price
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0101
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0104b
 
       - name: gross_amount
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
                 tags: lesson-0102
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0104b
