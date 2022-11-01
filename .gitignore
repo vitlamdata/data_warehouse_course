@@ -1,3 +1,21 @@
+# DBT
+target/
+dbt_packages/
+logs/
+.user.yml
+profiles.yml
+
+
+# Config files
+conf/*
+!conf/.gitkeep
+
+
+# Python venv
+.dbtenv/
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
