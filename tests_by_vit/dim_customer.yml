@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0106a
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: INT64
+              config:
+                tags: lesson-0106a
+
+      - name: customer_name
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0106a
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: STRING
+              config:
+                tags: lesson-0106a
