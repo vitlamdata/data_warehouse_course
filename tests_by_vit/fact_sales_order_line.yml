@@ -32,6 +32,9 @@ models:
               column_type: INT64
               config:
                 tags: lesson-0110a
+          - not_null:
+              config:
+                tags: lesson-0110c
 
       - name: product_key
         tests:
