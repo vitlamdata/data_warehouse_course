@@ -3,4 +3,4 @@ Trong thực tế, data source khi được đưa về data lake có thể khôn
 Yêu cầu của `lesson-0104a`:
 - Tìm syntax chuyển đổi data type
 - Tìm đọc các loại data type của BigQuery
-- Mở file [models/analytics/dim_product.sql](../models/analytics/dim_product.sql), sửa query để chuyển đổi data type của model `dim_product`
+- Mở file [`models/analytics/dim_product.sql`](../models/analytics/dim_product.sql), sửa query để chuyển đổi data type của model `dim_product`
