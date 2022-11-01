@@ -1,0 +1,52 @@
+{
+    // SOURCE: https://dbt-msft.github.io/dbt-msft-docs/docs/guides/vscode_setup/#extra-settings
+    // easier to see if there are unsaved changed
+    "workbench.editor.highlightModifiedTabs": true,
+    // "workbench.editor.labelFormat": "medium",
+    // make Command Prompt the default shell for Windows instead of Powershell
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    
+    // make a vertical line so I don't make lines too long
+    // "editor.rulers": [80],
+    // show whitespace as dots
+    // (easier to count out indentation and spot trailing whitesapce)
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+
+
+    // SOURCE: https://stackoverflow.com/questions/45806965/auto-indent-rules-for-file-extension-in-visual-studio-code-vscode
+    "[sql]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+
+
+    // SOURCE: https://stackoverflow.com/a/63541437
+    "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor",
+    },
+
+
+    // SOURCE: https://stackoverflow.com/questions/45635168/vscode-how-to-run-a-command-after-each-terminal-open
+    // "terminal.integrated.shellArgs.osx": ,
+    // "terminal.integrated.shellArgs.linux": ["your_init_script.sh"],
+    "terminal.integrated.profiles.windows": {
+        "Custom Cmd": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": ["/k", "bin\\windows\\terminal_startup.bat"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Custom Cmd",
+
+    "terminal.integrated.profiles.osx": {
+        "Custom MacOS": {
+            "path": "/bin/bash",
+            "args": ["--init-file", "bin/macos/terminal_startup.sh"]
+        },
+    },
+    "terminal.integrated.defaultProfile.osx": "Custom MacOS",
+
+
+    "scm.defaultViewMode": "tree",
+}
