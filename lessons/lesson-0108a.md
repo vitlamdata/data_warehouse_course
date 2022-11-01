@@ -1,0 +1,1 @@
+Yêu cầu của `lesson-0108a`: Mở model [`dim_product`](../models/analytics/dim_product.sql), thêm dữ liệu `is_chiller_stock`

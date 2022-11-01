@@ -33,6 +33,16 @@ models:
               config:
                 tags: lesson-0104a
 
+      - name: is_chiller_stock
+        tests:
+          - dbt_expectations.expect_column_to_exist:
+              config:
+                tags: lesson-0108a
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: STRING
+              config:
+                tags: lesson-0108b
+
       - name: supplier_id
         tests:
           - dbt_expectations.expect_column_to_exist:
