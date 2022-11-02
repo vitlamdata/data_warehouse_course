@@ -8,6 +8,12 @@ models:
             tags: lesson-0201a
             
     columns:
+      - name: sales_order_line_indicator_key
+        tests:
+          - not_null:
+              config:
+                tags: lesson-0202b
+
       - name: package_type_key
         tests:
           - dbt_expectations.expect_column_values_to_be_of_type:

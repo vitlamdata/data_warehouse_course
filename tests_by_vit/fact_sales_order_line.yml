@@ -45,6 +45,12 @@ models:
               column_type: INT64
               config:
                 tags: lesson-0104b
+                
+      - name: sales_order_line_indicator_key
+        tests:
+          - not_null:
+              config:
+                tags: lesson-0202b
 
       - name: order_date
         tests:
