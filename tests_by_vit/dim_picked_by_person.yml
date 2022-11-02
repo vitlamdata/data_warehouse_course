@@ -1,14 +1,14 @@
 version: 2
 
 models:
-  - name: dim_salesperson_person
+  - name: dim_picked_by_person
     tests:
       - custom_test_table_exists:
           config:
-            tags: lesson-0201a
+            tags: lesson-0201b
             
     columns:
-      - name: salesperson_person_key
+      - name: picked_by_person_key
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
@@ -21,7 +21,7 @@ models:
               config:
                 tags: lesson-0201b
 
-      - name: salesperson_full_name
+      - name: picked_by_full_name
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
