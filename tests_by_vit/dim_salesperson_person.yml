@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: dim_salesperson_person
+    tests:
+      - custom_test_table_exists:
+          config:
+            tags: lesson-0201a
