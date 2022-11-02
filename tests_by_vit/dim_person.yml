@@ -16,7 +16,7 @@ models:
               config:
                 tags: lesson-0110a
 
-      - name: person_full_name
+      - name: full_name
         tests:
           - dbt_expectations.expect_column_to_exist:
               config:
