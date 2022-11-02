@@ -1,0 +1,1 @@
+Yêu cầu của `lesson-0205`: Tạo DBT test `not_null` cho toàn bộ model bên trong thư mục [`models/analytics`](../models/analytics). Cột nào không được null đều phải được tạo test `not_null`.

@@ -1,0 +1,1 @@
+Yêu cầu của `lesson-0206`: Tạo DBT test primary key cho toàn bộ model bên trong thư mục [`models/analytics`](../models/analytics).
