@@ -10,9 +10,6 @@ models:
     columns:
       - name: salesperson_person_key
         tests:
-          - dbt_expectations.expect_column_to_exist:
-              config:
-                tags: lesson-0201b
           - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: INT64
               config:
@@ -23,9 +20,6 @@ models:
 
       - name: salesperson_full_name
         tests:
-          - dbt_expectations.expect_column_to_exist:
-              config:
-                tags: lesson-0201b
           - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: STRING
               config:
