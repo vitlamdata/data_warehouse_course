@@ -81,7 +81,7 @@ models:
               config:
                 tags: lesson-0101
           - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: INT64
+              column_type: NUMERIC
               config:
                 tags: lesson-0104b
 
@@ -91,6 +91,6 @@ models:
               config:
                 tags: lesson-0102
           - dbt_expectations.expect_column_values_to_be_of_type:
-              column_type: INT64
+              column_type: NUMERIC
               config:
                 tags: lesson-0104b
