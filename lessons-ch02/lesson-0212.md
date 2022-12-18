@@ -1,1 +1,1 @@
-Yêu cầu của `lesson-0211`: Tạo DBT test equal sum.
+Yêu cầu của `lesson-0212`: Tạo DBT test equal sum.

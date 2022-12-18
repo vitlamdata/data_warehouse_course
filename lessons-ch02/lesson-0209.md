@@ -1,1 +1,1 @@
-Yêu cầu của `lesson-0209`: Tạo DBT test range.
+Yêu cầu của `lesson-0209`: Tạo DBT test accepted range.
