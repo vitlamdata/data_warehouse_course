@@ -1,5 +1,3 @@
-source ~/.bashrc
-
 # config cho DBT
 export DBT_PROFILES_DIR=$(pwd)
 

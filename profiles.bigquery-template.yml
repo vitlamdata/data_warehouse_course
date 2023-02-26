@@ -1,10 +1,12 @@
+# Documentation: https://docs.getdbt.com/docs/get-started/connection-profiles
+
 wide_world_importers_dbt:
   outputs:
     dev:
-      project: duckdata-example
-      keyfile: C:\Users\Admin\Projects\data_warehouse_course\conf\dbt-bigquery-service-account.json
-      location: asia-southeast1
+      project: zzz
+      keyfile: zzz
       dataset: wide_world_importers_dwh
+      location: asia-southeast1
       type: bigquery
       job_execution_timeout_seconds: 300
       job_retries: 1

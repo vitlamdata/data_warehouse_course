@@ -54,7 +54,7 @@ models:
           - not_null:
               config:
                 tags: lesson-0111b
-          
+
       - name: year_month
         tests:
           - dbt_expectations.expect_column_to_exist:
@@ -74,7 +74,7 @@ models:
           - dbt_expectations.expect_column_values_to_be_of_type:
               column_type: STRING
           - not_null
-          
+
       - name: year
         tests:
           - dbt_expectations.expect_column_to_exist:
@@ -87,7 +87,7 @@ models:
           - not_null:
               config:
                 tags: lesson-0111b
-              
+
       - name: year_number
         tests:
           - dbt_expectations.expect_column_to_exist:

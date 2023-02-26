@@ -6,7 +6,7 @@ models:
       - custom_test_table_exists:
           config:
             tags: lesson-0201a
-            
+
     columns:
       - name: salesperson_person_key
         tests:

@@ -1,0 +1,1 @@
+Yêu cầu của `lesson-0201c`: Kiểm tra tất cả model đang có và tạo role playing dimension nếu cần thiết.

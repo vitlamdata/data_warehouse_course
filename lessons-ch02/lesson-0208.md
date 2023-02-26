@@ -1,1 +1,1 @@
-Yêu cầu của `lesson-0208`: Tạo DBT test accepted values và unaccepted values.
+Yêu cầu của `lesson-0208`: Tạo DBT test accepted values.
